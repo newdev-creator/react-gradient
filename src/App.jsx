@@ -2,6 +2,7 @@ import { useSelector } from "react-redux";
 import Gradient from "./components/Gradient";
 import ColorInput from "./components/inputs/ColorInput";
 import AddRemoveColor from "./components/AddRemoveColor";
+import RangeAngle from "./components/inputs/RangeAngle";
 
 function App() {
   const gradientValues = useSelector((state) => state.gradient);
@@ -31,7 +32,7 @@ function App() {
         {/* RangeColor */}
 
         <p>Gradient global angle</p>
-        {/* RangeAngle */}
+        <RangeAngle />
 
         {/* OpenModalBtn */}
       </div>
