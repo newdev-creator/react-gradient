@@ -3,10 +3,11 @@ import Gradient from "./components/Gradient";
 import ColorInput from "./components/inputs/ColorInput";
 import AddRemoveColor from "./components/AddRemoveColor";
 import RangeAngle from "./components/inputs/RangeAngle";
+import SelectColor from "./components/inputs/SelectColor";
+import RangeColorPosition from "./components/inputs/RangeColorPosition";
 
 function App() {
   const gradientValues = useSelector((state) => state.gradient);
-  console.log(gradientValues);
 
   return (
     <div className="relative text-slate-100 max-w-4xl mx-auto mt-20 p-4 border border-slate-400 flex">
@@ -26,10 +27,10 @@ function App() {
         </div>
 
         <p>Pick and change a Color's position</p>
-        {/* SelectColor */}
+        <SelectColor />
 
         <p>Color's position</p>
-        {/* RangeColor */}
+        <RangeColorPosition />
 
         <p>Gradient global angle</p>
         <RangeAngle />
