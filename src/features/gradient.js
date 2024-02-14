@@ -1,4 +1,25 @@
 import { createSlice } from "@reduxjs/toolkit";
+import getGradientCSSValue from "../utils/getGradientCSSValue";
+
+// test getGradientCSSValue
+// console.log(
+//   getGradientCSSValue({
+//     colors: [
+//       {
+//         id: 1,
+//         value: "#00d2ff",
+//         position: 20,
+//       },
+//       {
+//         id: 2,
+//         value: "#ee9ca7",
+//         position: 50,
+//       },
+//     ],
+//     pickColorID: 1,
+//     angle: 60,
+//   })
+// );
 
 const initialState = {
   colors: [
